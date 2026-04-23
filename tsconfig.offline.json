@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": [],
+    "noImplicitAny": false,
+    "strict": false,
+    "skipLibCheck": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types/offline-shims.d.ts"],
+  "exclude": ["node_modules"]
+}
