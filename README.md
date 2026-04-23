@@ -35,6 +35,17 @@ npm run dev
 - Static default file path:
   - `public/assets/gallery-placeholder.svg`
 
+
+## Typecheck in Restricted Environments
+
+If `npm install` is blocked (e.g. private registry / no internet), use:
+
+```bash
+npm run typecheck:offline
+```
+
+This uses local shim declarations (`types/offline-shims.d.ts`) so CI/dev containers can still run structural TypeScript checks without downloading packages.
+
 ## Stack
 
 - Next.js 15 (App Router) + React 19
